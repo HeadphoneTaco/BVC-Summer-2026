@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fdfd651841fcf6e4a98f1ec6e6bd69a8
+guid: 6c746569245bc8b44995a19300295a66
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -102,7 +102,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
