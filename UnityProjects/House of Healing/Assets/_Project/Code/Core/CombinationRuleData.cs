@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using _Project.Code.Core.Enums;
+using _Project.Code.Gameplay;
 using UnityEngine;
 
 namespace _Project.Code.Core
@@ -11,16 +14,39 @@ namespace _Project.Code.Core
     [CreateAssetMenu(fileName = "NewCombinationRule", menuName = "House of Healing/Combination Rule")]
     public class CombinationRuleData : ScriptableObject
     {
-        [Tooltip("2 or 3 ingredients. Order does not matter.")] [SerializeField]
-        private IngredientData[] ingredients;
+        
+        public IngredientData[]  ingredients;
+        public OutcomeType outcomeType;
+        public string resultName;
+        public Item resultItem;
+        public bool canCombine;
+        public bool canAlsoCombine; 
+        
+        public bool CanCombineIngredients(IngredientData ingredientData, IngredientData otherIngredientData)
+        {
+            for (int i = 0; i < ingredients.Length; i++)
+            {
+                if (ingredients[i] == otherIngredientData )
+                {
+                    canCombine = true;
+                    Debug.Log("1 true");
+                }
+                
+                if (ingredients[i] == ingredientData)
+                {
+                    canAlsoCombine = true;
+                    Debug.Log("2 true");
+                }
 
-        [SerializeField] private OutcomeType outcomeType;
-
-        [Tooltip("Displayed name of the remedy, potion, or mess produced.")] [SerializeField]
-        private string resultName;
-
-        public IngredientData[] Ingredients => ingredients;
-        public OutcomeType OutcomeType => outcomeType;
-        public string ResultName => resultName;
+                
+                    
+            }
+            if (canCombine && canAlsoCombine)
+            {
+                Debug.Log("bothtrue");
+                return true;
+            }
+            return false;
+        }
     }
 }

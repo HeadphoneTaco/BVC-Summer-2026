@@ -27,8 +27,8 @@ namespace _Project.Code.Gameplay.Chores
         {
             if (ingredient == null) return "Ingredient";
             return ingredient.IsProcessed()
-                ? $"Store {ingredient.GetData().IngredientName}"
-                : $"Process {ingredient.GetData().IngredientName}";
+                ? $"Store {ingredient.GetData().ingredientName}"
+                : $"Process {ingredient.GetData().ingredientName}";
         }
 
         public void Interact(GameObject interactor)
@@ -47,7 +47,7 @@ namespace _Project.Code.Gameplay.Chores
                 if (inventorySystem != null)
                 {
                     inventorySystem.StoreIngredient(ingredient.GetData());
-                    Debug.Log($"[IngredientPickup] Stored {ingredient.GetData().IngredientName}.");
+                    Debug.Log($"[IngredientPickup] Stored {ingredient.GetData().ingredientName}.");
                     gameObject.SetActive(false); // Remove from world once stored
                 }
                 else

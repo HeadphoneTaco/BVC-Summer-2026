@@ -15,7 +15,7 @@ namespace _Project.Code.Gameplay.Systems
     {
         private readonly List<string> buildingInventory = new();
         private readonly List<IngredientData> ingredientStorage = new();
-
+/*
         private void OnEnable()
         {
             ChemistrySystem.OnCombinationResolved += HandleCombinationResolved;
@@ -25,7 +25,7 @@ namespace _Project.Code.Gameplay.Systems
         {
             ChemistrySystem.OnCombinationResolved -= HandleCombinationResolved;
         }
-
+*/
         private void HandleCombinationResolved(OutcomeResult result)
         {
             if (result.OutcomeType == OutcomeType.Success)
@@ -38,7 +38,7 @@ namespace _Project.Code.Gameplay.Systems
         public void StoreIngredient(IngredientData ingredient)
         {
             ingredientStorage.Add(ingredient);
-            Debug.Log($"[InventorySystem] Stored ingredient: {ingredient.IngredientName}");
+            Debug.Log($"[InventorySystem] Stored ingredient: {ingredient.ingredientName}");
         }
 
         /// <summary>Returns a newline-separated list for the rudimentary UI text display.</summary>

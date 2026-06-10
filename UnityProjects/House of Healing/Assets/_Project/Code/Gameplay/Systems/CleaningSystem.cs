@@ -11,7 +11,7 @@ namespace _Project.Code.Gameplay.Systems
     public class CleaningSystem : MonoBehaviour
     {
         private bool messPresent;
-
+/*
         private void OnEnable()
         {
             ChemistrySystem.OnCombinationResolved += HandleCombinationResolved;
@@ -21,7 +21,7 @@ namespace _Project.Code.Gameplay.Systems
         {
             ChemistrySystem.OnCombinationResolved -= HandleCombinationResolved;
         }
-
+*/
         private void HandleCombinationResolved(OutcomeResult result)
         {
             if (result.OutcomeType == OutcomeType.Neutral || result.OutcomeType == OutcomeType.Fail)
