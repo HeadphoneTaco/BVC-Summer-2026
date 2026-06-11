@@ -17,32 +17,45 @@ namespace _Project.Code.Gameplay.Systems
     {
         [Tooltip("All authored CombinationRuleData assets.")] [SerializeField]
         private CombinationRuleData[] combinationRules;
+        private int currentRuleIndex = 0;
+        public Transform itemSpawnTransform;
+        public List<Ingredient> currentIngredients;
 
-        private CombinationLookup lookup;
-
-        private void Awake()
+        public void CheckIngredients(Ingredient ingredient, Ingredient ingredient2)
         {
-            lookup = new CombinationLookup(combinationRules);
+            for (int i = 0; i < combinationRules.Length; i++)
+            {
+                if (combinationRules[i].CanCombineIngredients(ingredient.data, ingredient2.data))
+                {
+                    Debug.Log("combined");
+                    currentRuleIndex = i;
+                    CombineIngredients();
+                }
+            }
         }
 
-        public static event Action<OutcomeResult> OnCombinationResolved;
-
-        /// <summary>
-        ///     Entry point called by UI. Validates, looks up rule, raises result event.
-        /// </summary>
-        public void Evaluate(List<IIngredient> ingredients)
+        private void OnTriggerEnter(Collider other)
         {
-            if (!IngredientValidator.ValidateCount(ingredients)) return;
-            if (!IngredientValidator.ValidateAllProcessed(ingredients)) return;
+            if (other.GetComponent<Ingredient>())
+            {
+                currentIngredients.Add(other.GetComponent<Ingredient>());
+            }
 
-            var rule = lookup.FindRule(ingredients);
+            if (currentIngredients.Count >= 2)
+            {
+                CheckIngredients(currentIngredients[0], currentIngredients[1]);
+            }
+        }
 
-            var result = rule != null
-                ? new OutcomeResult(rule.OutcomeType, rule.ResultName)
-                : new OutcomeResult(OutcomeType.Neutral, "Unknown Mixture");
+        void CombineIngredients()
+        {
+            Instantiate(combinationRules[currentRuleIndex].resultItem, itemSpawnTransform);
+        }
 
-            Debug.Log($"[ChemistrySystem] Combination resolved: {result}");
-            OnCombinationResolved?.Invoke(result);
+
+        public void Evaluate(List<IIngredient> stagedIngredients)
+        {
+            throw new NotImplementedException();
         }
     }
 }

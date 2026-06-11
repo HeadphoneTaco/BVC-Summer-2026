@@ -11,7 +11,7 @@ namespace _Project.Code.Utilities
     public static class IngredientValidator
     {
         private const int minIngredients = 2;
-        private const int maxIngredients = 3;
+        private const int maxIngredients = 2;
 
         /// <summary>Combination requires 2 or 3 ingredients.</summary>
         public static bool ValidateCount(List<IIngredient> ingredients)
@@ -36,7 +36,7 @@ namespace _Project.Code.Utilities
                 if (!ingredient.IsProcessed())
                 {
                     Debug.LogWarning(
-                        $"[IngredientValidator] {ingredient.GetData().IngredientName} is not processed. Combination blocked.");
+                        $"[IngredientValidator] {ingredient.GetData().ingredientName} is not processed. Combination blocked.");
                     return false;
                 }
 

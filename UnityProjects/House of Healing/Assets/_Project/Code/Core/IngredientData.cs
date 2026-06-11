@@ -10,14 +10,12 @@ namespace _Project.Code.Core
     [CreateAssetMenu(fileName = "NewIngredient", menuName = "House of Healing/Ingredient Data")]
     public class IngredientData : ScriptableObject
     {
-        [SerializeField] private string ingredientName;
-        [SerializeField] private IngredientCategory category;
-        [SerializeField] private Sprite rawSprite;
-        [SerializeField] private Sprite processedSprite;
-
-        public string IngredientName => ingredientName;
-        public IngredientCategory Category => category;
-        public Sprite RawSprite => rawSprite;
-        public Sprite ProcessedSprite => processedSprite;
+         public string ingredientName;
+         public IngredientCategory category;
+         public Sprite rawSprite;
+         public Sprite processedSprite;
+         public bool isProcessed;
+         public CombinationRuleData combinationRuleData;
+         public IngredientType ingredientType;
     }
 }

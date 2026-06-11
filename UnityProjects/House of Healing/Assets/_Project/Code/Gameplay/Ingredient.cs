@@ -11,7 +11,7 @@ namespace _Project.Code.Gameplay
     /// </summary>
     public class Ingredient : MonoBehaviour, IIngredient, IProcessable
     {
-        [SerializeField] private IngredientData data;
+        public IngredientData data;
 
         private bool isProcessed;
 
@@ -33,12 +33,12 @@ namespace _Project.Code.Gameplay
         {
             if (isProcessed)
             {
-                Debug.LogWarning($"{data.IngredientName} is already processed.");
+                Debug.LogWarning($"{data.ingredientName} is already processed.");
                 return;
             }
 
             isProcessed = true;
-            Debug.Log($"{data.IngredientName} processed. State: processed.");
+            Debug.Log($"{data.ingredientName} processed. State: processed.");
 
             // TODO A2: trigger sprite swap, animation, sound
         }

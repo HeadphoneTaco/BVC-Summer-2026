@@ -13,16 +13,16 @@ namespace _Project.Code.Utilities
     {
         private readonly Dictionary<string, CombinationRuleData> rules = new();
 
-        public CombinationLookup(CombinationRuleData[] rules)
+      /*  public CombinationLookup(CombinationRuleData[] rules)
         {
             foreach (var rule in rules)
             {
-                var key = BuildKey(rule.Ingredients);
+                var key = BuildKey(rule.ingredients);
                 if (!this.rules.ContainsKey(key))
                     this.rules[key] = rule;
             }
         }
-
+*/
         public CombinationRuleData FindRule(List<IIngredient> ingredients)
         {
             var ingredientData = ingredients.Select(i => i.GetData()).ToArray();
@@ -36,7 +36,7 @@ namespace _Project.Code.Utilities
         /// </summary>
         private static string BuildKey(IngredientData[] ingredients)
         {
-            var names = ingredients.Select(i => i.IngredientName).OrderBy(n => n);
+            var names = ingredients.Select(i => i.ingredientName).OrderBy(n => n);
             return string.Join("|", names);
         }
     }

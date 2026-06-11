@@ -51,7 +51,7 @@ namespace _Project.Code.Gameplay.Chores
 
             if (chemistrySystem != null)
             {
-                chemistrySystem.Evaluate(stagedIngredients);
+                //chemistrySystem.Evaluate(stagedIngredients);
                 stagedIngredients.Clear();
             }
             else
@@ -74,7 +74,7 @@ namespace _Project.Code.Gameplay.Chores
 
             stagedIngredients.Add(ingredient);
             Debug.Log(
-                $"[ChemistryWorkbench] Staged: {ingredient.GetData().IngredientName} ({stagedIngredients.Count}/3)");
+                $"[ChemistryWorkbench] Staged: {ingredient.GetData().ingredientName} ({stagedIngredients.Count}/3)");
             return true;
         }
 

@@ -30,7 +30,7 @@ namespace _Project.Code.Gameplay.Systems
                 return;
             }
 
-            var strategy = SelectStrategy(ingredient.GetData().Category);
+            var strategy = SelectStrategy(ingredient.GetData().category);
             strategy.Execute(ingredient);
 
             OnIngredientProcessed?.Invoke(ingredient);
