@@ -19,31 +19,20 @@ namespace _Project.Code.Core
         public OutcomeType outcomeType;
         public string resultName;
         public Item resultItem;
-        public bool canCombine;
-        public bool canAlsoCombine; 
-        
+
         public bool CanCombineIngredients(IngredientData ingredientData, IngredientData otherIngredientData)
         {
+            // Local flags — reset every call, so a previous match can't leak into the next one.
+            bool hasFirst = false;
+            bool hasSecond = false;
+
             for (int i = 0; i < ingredients.Length; i++)
             {
-                if (ingredients[i] == otherIngredientData )
-                {
-                    canCombine = true;
-                    Debug.Log("1 true");
-                }
-                
-                if (ingredients[i] == ingredientData)
-                {
-                    canAlsoCombine = true;
-                    Debug.Log("2 true");
-                }
+                if (ingredients[i] == otherIngredientData) hasFirst = true;
+                if (ingredients[i] == ingredientData) hasSecond = true;
             }
-            if (canCombine && canAlsoCombine)
-            {
-                Debug.Log("bothtrue");
-                return true;
-            }
-            return false;
+
+            return hasFirst && hasSecond;
         }
     }
 }

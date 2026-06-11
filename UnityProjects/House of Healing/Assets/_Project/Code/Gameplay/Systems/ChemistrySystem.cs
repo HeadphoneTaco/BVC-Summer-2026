@@ -27,9 +27,15 @@ namespace _Project.Code.Gameplay.Systems
             {
                 if (combinationRules[i].CanCombineIngredients(ingredient.data, ingredient2.data))
                 {
-                    Debug.Log("combined");
                     currentRuleIndex = i;
                     CombineIngredients();
+
+                    // Consume the pair so it can't combine again on the next trigger event.
+                    currentIngredients.Remove(ingredient);
+                    currentIngredients.Remove(ingredient2);
+                    Destroy(ingredient.gameObject);
+                    Destroy(ingredient2.gameObject);
+                    return; // one match is enough
                 }
             }
         }
