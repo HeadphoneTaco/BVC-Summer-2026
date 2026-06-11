@@ -48,6 +48,14 @@ namespace _Project.Code.Gameplay.Systems
             currentIngredients.Add(newcomer);
         }
 
+        private void OnTriggerExit(Collider other)
+        {
+            // An ingredient that rolls off the bench should no longer count for a combination.
+            var leaving = other.GetComponent<Ingredient>();
+            if (leaving != null)
+                currentIngredients.Remove(leaving);
+        }
+
         void CombineIngredients()
         {
             Instantiate(combinationRules[currentRuleIndex].resultItem, itemSpawnTransform);
