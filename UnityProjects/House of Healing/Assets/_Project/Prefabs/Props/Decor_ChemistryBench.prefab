@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 304676932044265782}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.284, y: 0.55, z: -0.16}
+  m_LocalPosition: {x: -1.284, y: 1.316, z: -0.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -159,5 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Code.Gameplay.Systems.ChemistrySystem
   combinationRules:
   - {fileID: 11400000, guid: f7ea19fe200c0dd47895611223bd2629, type: 2}
+  - {fileID: 11400000, guid: 2dd5d97d7d0d5d844964756aa6f5f289, type: 2}
+  - {fileID: 11400000, guid: b36ff77140985a94f8101329531a5130, type: 2}
   itemSpawnTransform: {fileID: 2916249567353807787}
   currentIngredients: []

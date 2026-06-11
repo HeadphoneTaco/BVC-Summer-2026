@@ -37,9 +37,6 @@ namespace _Project.Code.Core
                     canAlsoCombine = true;
                     Debug.Log("2 true");
                 }
-
-                
-                    
             }
             if (canCombine && canAlsoCombine)
             {

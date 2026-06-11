@@ -16,6 +16,6 @@ MonoBehaviour:
   category: 0
   rawSprite: {fileID: 0}
   processedSprite: {fileID: 0}
-  isProcessed: 0
+  isProcessed: 1
   combinationRuleData: {fileID: 11400000, guid: f7ea19fe200c0dd47895611223bd2629, type: 2}
   ingredientType: 1

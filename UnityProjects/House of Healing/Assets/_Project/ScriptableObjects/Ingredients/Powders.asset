@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35dae1f39432b3b41bbd6f80453f16fa, type: 3}
   m_Name: Powders
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Code.Core.IngredientData
-  ingredientName: 
-  category: 0
+  ingredientName: Powders
+  category: 1
   rawSprite: {fileID: 0}
   processedSprite: {fileID: 0}
-  isProcessed: 0
-  combinationRuleData: {fileID: 0}
+  isProcessed: 1
+  combinationRuleData: {fileID: 11400000, guid: 2dd5d97d7d0d5d844964756aa6f5f289, type: 2}
   ingredientType: 0

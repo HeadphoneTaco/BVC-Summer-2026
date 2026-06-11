@@ -5,7 +5,7 @@ public class ThirdPersonCameraController : MonoBehaviour
 {
     [SerializeField]private Transform target;
     
-    [SerializeField] private float moveSpeed = 5f;
+ //   [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float distance;
     [SerializeField] private float minAngle = -45;
     [SerializeField] private float maxAngle = 90;
