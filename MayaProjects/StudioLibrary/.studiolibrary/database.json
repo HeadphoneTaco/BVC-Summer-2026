@@ -1,0 +1,11 @@
+{
+    "../../Poses": {
+        "name": "Poses",
+        "path": "../../Poses",
+        "type": "Folder",
+        "folder": "../..",
+        "category": "StudioLibrary",
+        "modified": 1780963105.8632517,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    }
+}
