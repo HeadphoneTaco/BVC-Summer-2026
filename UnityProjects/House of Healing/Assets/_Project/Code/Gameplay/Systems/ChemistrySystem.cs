@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using _Project.Code.Core;
-using _Project.Code.Core.Enums;
 using _Project.Code.Core.Interfaces;
-using _Project.Code.Utilities;
 using UnityEngine;
 
 namespace _Project.Code.Gameplay.Systems
@@ -17,40 +15,37 @@ namespace _Project.Code.Gameplay.Systems
     {
         [Tooltip("All authored CombinationRuleData assets.")] [SerializeField]
         private CombinationRuleData[] combinationRules;
-        private int currentRuleIndex = 0;
+        private int currentRuleIndex;
         public Transform itemSpawnTransform;
         public List<Ingredient> currentIngredients;
 
-        public void CheckIngredients(Ingredient ingredient, Ingredient ingredient2)
-        {
-            for (int i = 0; i < combinationRules.Length; i++)
-            {
-                if (combinationRules[i].CanCombineIngredients(ingredient.data, ingredient2.data))
-                {
-                    currentRuleIndex = i;
-                    CombineIngredients();
-
-                    // Consume the pair so it can't combine again on the next trigger event.
-                    currentIngredients.Remove(ingredient);
-                    currentIngredients.Remove(ingredient2);
-                    Destroy(ingredient.gameObject);
-                    Destroy(ingredient2.gameObject);
-                    return; // one match is enough
-                }
-            }
-        }
-
         private void OnTriggerEnter(Collider other)
         {
-            if (other.GetComponent<Ingredient>())
+            var newcomer = other.GetComponent<Ingredient>();
+            if (newcomer == null || currentIngredients.Contains(newcomer)) return;
+
+            // Try to pair the newly arrived ingredient with one already on the bench.
+            foreach (var staged in currentIngredients)
             {
-                currentIngredients.Add(other.GetComponent<Ingredient>());
+                if (staged == null) continue;
+
+                for (int r = 0; r < combinationRules.Length; r++)
+                {
+                    if (!combinationRules[r].CanCombineIngredients(staged.data, newcomer.data)) continue;
+
+                    currentRuleIndex = r;
+                    CombineIngredients();
+
+                    // Consume both ingredients of the matched pair.
+                    currentIngredients.Remove(staged);
+                    Destroy(staged.gameObject);
+                    Destroy(newcomer.gameObject);
+                    return;
+                }
             }
 
-            if (currentIngredients.Count >= 2)
-            {
-                CheckIngredients(currentIngredients[0], currentIngredients[1]);
-            }
+            // No partner on the bench yet — leave it here for a future match.
+            currentIngredients.Add(newcomer);
         }
 
         void CombineIngredients()
