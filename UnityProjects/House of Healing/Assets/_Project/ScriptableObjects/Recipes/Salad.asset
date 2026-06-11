@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Salad
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Code.Core.CombinationRuleData
   ingredients:
-  - {fileID: 11400000, guid: 6251ad5a04b835e4daa09061e309134f, type: 2}
-  - {fileID: 11400000, guid: 9c0f3408152c197489a1b084fe312c0e, type: 2}
+  - {fileID: 11400000, guid: 3b4358a874509e44d99470e2e5a80d59, type: 2}
+  - {fileID: 11400000, guid: 851c6e243a9e2e84593263f2b8dae670, type: 2}
   outcomeType: 0
-  resultName: JOE
+  resultName: Salad
   resultItem: {fileID: 3592787682542212646, guid: 9d1eac4808e983840b2d6b074a97a36e, type: 3}
   canCombine: 0
   canAlsoCombine: 0
