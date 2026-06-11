@@ -3,10 +3,10 @@ namespace _Project.Code.Core.Enums
     public enum IngredientType
     {
         Water,
-        Oil,
-        Saltpetre,
-        Fruit,
+        Oils,
+        Gunpowder,
+        Fruits,
         Herbs,
-        Crystals
+        Powders
     }
 }

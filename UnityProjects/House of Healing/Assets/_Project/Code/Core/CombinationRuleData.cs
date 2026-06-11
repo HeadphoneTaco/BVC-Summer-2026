@@ -19,34 +19,19 @@ namespace _Project.Code.Core
         public OutcomeType outcomeType;
         public string resultName;
         public Item resultItem;
-        public bool canCombine;
-        public bool canAlsoCombine; 
-        
+
         public bool CanCombineIngredients(IngredientData ingredientData, IngredientData otherIngredientData)
         {
-            for (int i = 0; i < ingredients.Length; i++)
-            {
-                if (ingredients[i] == otherIngredientData )
-                {
-                    canCombine = true;
-                    Debug.Log("1 true");
-                }
-                
-                if (ingredients[i] == ingredientData)
-                {
-                    canAlsoCombine = true;
-                    Debug.Log("2 true");
-                }
+            // A rule pairs exactly two ingredients. Require the two supplied ingredients to be
+            // that exact pair (order doesn't matter) — not just "each appears somewhere in the rule".
+            // This stops a single ingredient (passed as both) from matching a two-ingredient rule.
+            if (ingredients.Length != 2) return false;
 
-                
-                    
-            }
-            if (canCombine && canAlsoCombine)
-            {
-                Debug.Log("bothtrue");
-                return true;
-            }
-            return false;
+            var a = ingredients[0];
+            var b = ingredients[1];
+
+            return (ingredientData == a && otherIngredientData == b) ||
+                   (ingredientData == b && otherIngredientData == a);
         }
     }
 }
