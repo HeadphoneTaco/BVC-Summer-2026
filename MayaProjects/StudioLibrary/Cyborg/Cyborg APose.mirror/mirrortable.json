@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "left": "",
+    "right": "",
+    "mirrorPlane": [
+      -1,
+      1,
+      1
+    ],
+    "description": "Mirror table for cyborg rig",
+    "user": "m.hardwicke596",
+    "ctime": "1781554868",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": ""
+  }
+,
+  "objects": {
+    "cyborg_rig:Group": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    }
+  }
+}

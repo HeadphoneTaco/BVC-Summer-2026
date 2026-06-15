@@ -1,21 +1,57 @@
 {
-    "../../Motion": {
-        "name": "Motion",
-        "path": "../../Motion",
+    "../../Cyborg": {
+        "name": "Cyborg",
+        "path": "../../Cyborg",
         "type": "Folder",
         "folder": "../..",
         "category": "StudioLibrary",
-        "modified": 1781554453.9891636,
+        "modified": 1781554955.470196,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
-    "../../Motion/RFootWalk.anim": {
-        "name": "RFootWalk.anim",
-        "path": "../../Motion/RFootWalk.anim",
+    "../../Cyborg/Basic walk cycle legs.anim": {
+        "name": "Basic walk cycle legs.anim",
+        "path": "../../Cyborg/Basic walk cycle legs.anim",
         "type": ".anim",
-        "folder": "../../Motion",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1781555743.215732,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../Cyborg/Cyborg APose.mirror": {
+        "name": "Cyborg APose.mirror",
+        "path": "../../Cyborg/Cyborg APose.mirror",
+        "type": ".mirror",
+        "folder": "../../Cyborg",
+        "category": "Motion",
+        "modified": 1781554868.919049,
+        "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
+    },
+    "../../Cyborg/LFootWalk.anim": {
+        "name": "LFootWalk.anim",
+        "path": "../../Cyborg/LFootWalk.anim",
+        "type": ".anim",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1781555225.0964112,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../Cyborg/RFootWalk.anim": {
+        "name": "RFootWalk.anim",
+        "path": "../../Cyborg/RFootWalk.anim",
+        "type": ".anim",
+        "folder": "../../Cyborg",
         "category": "Motion",
         "modified": 1781554611.8264964,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../Mirror Tables": {
+        "name": "Mirror Tables",
+        "path": "../../Mirror Tables",
+        "type": "Folder",
+        "folder": "../..",
+        "category": "StudioLibrary",
+        "modified": 1781554784.2104938,
+        "__class__": "studiolibrary.folderitem.FolderItem"
     },
     "../../Poses": {
         "name": "Poses",
