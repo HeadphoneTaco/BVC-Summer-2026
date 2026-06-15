@@ -5,7 +5,7 @@
         "type": "Folder",
         "folder": "../..",
         "category": "StudioLibrary",
-        "modified": 1781554955.470196,
+        "modified": 1781560743.963721,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
     "../../Cyborg/Basic walk cycle legs.anim": {
@@ -22,7 +22,7 @@
         "path": "../../Cyborg/Cyborg APose.mirror",
         "type": ".mirror",
         "folder": "../../Cyborg",
-        "category": "Motion",
+        "category": "Cyborg",
         "modified": 1781554868.919049,
         "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
     },
@@ -35,14 +35,32 @@
         "modified": 1781555225.0964112,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
+    "../../Cyborg/RArmSwing.anim": {
+        "name": "RArmSwing.anim",
+        "path": "../../Cyborg/RArmSwing.anim",
+        "type": ".anim",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1781560743.9226475,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
     "../../Cyborg/RFootWalk.anim": {
         "name": "RFootWalk.anim",
         "path": "../../Cyborg/RFootWalk.anim",
         "type": ".anim",
         "folder": "../../Cyborg",
-        "category": "Motion",
+        "category": "Cyborg",
         "modified": 1781554611.8264964,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../MASH": {
+        "name": "MASH",
+        "path": "../../MASH",
+        "type": "Folder",
+        "folder": "../..",
+        "category": "StudioLibrary",
+        "modified": 1781298918.6883636,
+        "__class__": "studiolibrary.folderitem.FolderItem"
     },
     "../../Mirror Tables": {
         "name": "Mirror Tables",
@@ -50,7 +68,7 @@
         "type": "Folder",
         "folder": "../..",
         "category": "StudioLibrary",
-        "modified": 1781554784.2104938,
+        "modified": 1781554955.4691916,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
     "../../Poses": {
@@ -59,7 +77,26 @@
         "type": "Folder",
         "folder": "../..",
         "category": "StudioLibrary",
-        "modified": 1780963105.8632517,
+        "modified": 1781298911.3190534,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Trash": {
+        "name": "Trash",
+        "path": "../../Trash",
+        "type": "Folder",
+        "folder": "../..",
+        "category": "StudioLibrary",
+        "modified": 1781298911.3190534,
+        "__class__": "studiolibrary.folderitem.FolderItem",
+        "icon": "trash.svg"
+    },
+    "../../Trash/MASH": {
+        "name": "MASH",
+        "path": "../../Trash/MASH",
+        "type": "Folder",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1781298888.093698,
         "__class__": "studiolibrary.folderitem.FolderItem"
     }
 }
