@@ -1,4 +1,22 @@
 {
+    "../../Motion": {
+        "name": "Motion",
+        "path": "../../Motion",
+        "type": "Folder",
+        "folder": "../..",
+        "category": "StudioLibrary",
+        "modified": 1781554453.9891636,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Motion/RFootWalk.anim": {
+        "name": "RFootWalk.anim",
+        "path": "../../Motion/RFootWalk.anim",
+        "type": ".anim",
+        "folder": "../../Motion",
+        "category": "Motion",
+        "modified": 1781554611.8264964,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
     "../../Poses": {
         "name": "Poses",
         "path": "../../Poses",
