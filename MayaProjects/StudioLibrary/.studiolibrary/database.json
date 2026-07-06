@@ -8,6 +8,24 @@
         "modified": 1781560743.963721,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
+    "../../Cyborg/Cyborg A-Pose.pose": {
+        "name": "Cyborg A-Pose.pose",
+        "path": "../../Cyborg/Cyborg A-Pose.pose",
+        "type": ".pose",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1783357194.9835873,
+        "__class__": "studiolibrarymaya.poseitem.PoseItem"
+    },
+    "../../Cyborg/Cyborg Arms Mirror Table.mirror": {
+        "name": "Cyborg Arms Mirror Table.mirror",
+        "path": "../../Cyborg/Cyborg Arms Mirror Table.mirror",
+        "type": ".mirror",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1783357562.035892,
+        "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
+    },
     "../../Cyborg/FULL_CharSet.set": {
         "name": "FULL_CharSet.set",
         "path": "../../Cyborg/FULL_CharSet.set",
@@ -24,24 +42,6 @@
         "folder": "../..",
         "category": "StudioLibrary",
         "modified": 1781298918.6883636,
-        "__class__": "studiolibrary.folderitem.FolderItem"
-    },
-    "../../Mirror Tables": {
-        "name": "Mirror Tables",
-        "path": "../../Mirror Tables",
-        "type": "Folder",
-        "folder": "../..",
-        "category": "StudioLibrary",
-        "modified": 1781554955.4691916,
-        "__class__": "studiolibrary.folderitem.FolderItem"
-    },
-    "../../Poses": {
-        "name": "Poses",
-        "path": "../../Poses",
-        "type": "Folder",
-        "folder": "../..",
-        "category": "StudioLibrary",
-        "modified": 1781298911.3190534,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
     "../../Trash": {
@@ -99,6 +99,15 @@
         "modified": 1781298888.093698,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
+    "../../Trash/Mirror Tables": {
+        "name": "Mirror Tables",
+        "path": "../../Trash/Mirror Tables",
+        "type": "Folder",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1781554955.4691916,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
     "../../Trash/MirroringArms.mirror": {
         "name": "MirroringArms.mirror",
         "path": "../../Trash/MirroringArms.mirror",
@@ -107,6 +116,15 @@
         "category": "Trash",
         "modified": 1781563624.7271419,
         "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
+    },
+    "../../Trash/Poses": {
+        "name": "Poses",
+        "path": "../../Trash/Poses",
+        "type": "Folder",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1781298911.3190534,
+        "__class__": "studiolibrary.folderitem.FolderItem"
     },
     "../../Trash/RArmSwing.anim": {
         "name": "RArmSwing.anim",
