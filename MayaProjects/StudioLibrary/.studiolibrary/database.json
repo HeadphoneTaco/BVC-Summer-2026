@@ -152,5 +152,14 @@
         "category": "Trash",
         "modified": 1781554611.8264964,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../Trash/garbage test.anim": {
+        "name": "garbage test.anim",
+        "path": "../../Trash/garbage test.anim",
+        "type": ".anim",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783372722.757035,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
     }
 }
