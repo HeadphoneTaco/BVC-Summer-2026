@@ -8,6 +8,15 @@
         "modified": 1781560743.963721,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
+    "../../Cyborg/Basic L Arm.anim": {
+        "name": "Basic L Arm.anim",
+        "path": "../../Cyborg/Basic L Arm.anim",
+        "type": ".anim",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1783359086.828012,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
     "../../Cyborg/Cyborg A-Pose.pose": {
         "name": "Cyborg A-Pose.pose",
         "path": "../../Cyborg/Cyborg A-Pose.pose",
