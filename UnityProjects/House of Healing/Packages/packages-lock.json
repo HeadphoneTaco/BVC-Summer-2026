@@ -230,7 +230,7 @@
       "url": "https://packages.unity.com"
     },
     "tech.fantabulous.coreutils": {
-      "version": "file:CoreUtils",
+      "version": "file:tech.fantabulous.coreutils",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
