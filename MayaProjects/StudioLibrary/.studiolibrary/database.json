@@ -44,6 +44,15 @@
         "modified": 1781566113.565782,
         "__class__": "studiolibrarymaya.setsitem.SetsItem"
     },
+    "../../Cyborg/RecoveryWalkCycle.anim": {
+        "name": "RecoveryWalkCycle.anim",
+        "path": "../../Cyborg/RecoveryWalkCycle.anim",
+        "type": ".anim",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1783385998.523096,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
     "../../MASH": {
         "name": "MASH",
         "path": "../../MASH",
