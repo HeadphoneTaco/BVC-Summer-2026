@@ -125,15 +125,6 @@
         "modified": 1783385998.523096,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../MASH": {
-        "name": "MASH",
-        "path": "../../MASH",
-        "type": "Folder",
-        "folder": "../..",
-        "category": "StudioLibrary",
-        "modified": 1781298918.6883636,
-        "__class__": "studiolibrary.folderitem.FolderItem"
-    },
     "../../Trash": {
         "name": "Trash",
         "path": "../../Trash",
@@ -180,6 +171,24 @@
         "modified": 1781555225.0964112,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
+    "../../Trash/LHandFingerWaggle (2).anim": {
+        "name": "LHandFingerWaggle (2).anim",
+        "path": "../../Trash/LHandFingerWaggle (2).anim",
+        "type": ".anim",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783532118.9490397,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../Trash/LHandFingerWaggle.anim": {
+        "name": "LHandFingerWaggle.anim",
+        "path": "../../Trash/LHandFingerWaggle.anim",
+        "type": ".anim",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783531803.1872814,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
     "../../Trash/MASH": {
         "name": "MASH",
         "path": "../../Trash/MASH",
@@ -187,6 +196,15 @@
         "folder": "../../Trash",
         "category": "Trash",
         "modified": 1781298888.093698,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Trash/MASH (2)": {
+        "name": "MASH (2)",
+        "path": "../../Trash/MASH (2)",
+        "type": "Folder",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1781298918.6883636,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
     "../../Trash/Mirror Tables": {
