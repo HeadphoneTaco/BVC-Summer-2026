@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using _Project.Code.Core;
+using _Project.Code.Core.Enums;
 using _Project.Code.Core.Interfaces;
+using _Project.Code.Utilities;
 using UnityEngine;
 
 namespace _Project.Code.Gameplay.Systems
@@ -10,61 +12,63 @@ namespace _Project.Code.Gameplay.Systems
     ///     Evaluates ingredient combinations and raises OnCombinationResolved.
     ///     Does not manage inventory — that is InventorySystem's responsibility.
     ///     Accepts 2 or 3 processed ingredients only.
+    ///     Spec rule enforced here: no raw ingredient can succeed, and that check
+    ///     happens BEFORE any rule lookup is attempted.
     /// </summary>
     public class ChemistrySystem : MonoBehaviour
     {
         [Tooltip("All authored CombinationRuleData assets.")] [SerializeField]
         private CombinationRuleData[] combinationRules;
-        private int currentRuleIndex;
+
+        [Tooltip("Where a successful combination's result item is spawned.")]
         public Transform itemSpawnTransform;
-        public List<Ingredient> currentIngredients;
 
-        private void OnTriggerEnter(Collider other)
+        /// <summary>
+        ///     Observer hook. InventorySystem stores Success results;
+        ///     CleaningSystem creates a mess on Neutral/Fail.
+        /// </summary>
+        public static event Action<OutcomeResult> OnCombinationResolved;
+
+        /// <summary>
+        ///     Entry point called by ChemistryWorkbench with the staged ingredients.
+        ///     Returns the resolved outcome, or null when the input was not a valid
+        ///     combination attempt (wrong count) — no event is raised in that case.
+        /// </summary>
+        public OutcomeResult Evaluate(List<IIngredient> stagedIngredients)
         {
-            var newcomer = other.GetComponent<Ingredient>();
-            if (newcomer == null || currentIngredients.Contains(newcomer)) return;
+            // Not a combination attempt — reject without an outcome or event.
+            if (!IngredientValidator.ValidateCount(stagedIngredients))
+                return null;
 
-            // Try to pair the newly arrived ingredient with one already on the bench.
-            foreach (var staged in currentIngredients)
+            // Central spec rule: any raw ingredient fails the mix BEFORE lookup.
+            if (!IngredientValidator.ValidateAllProcessed(stagedIngredients))
+                return Resolve(new OutcomeResult(OutcomeType.Fail, "Ruined Mixture (raw ingredient)"));
+
+            // Rule lookup. Linear scan by design: with a handful of authored rules,
+            // a dictionary lookup (the cut CombinationLookup) buys nothing but a class.
+            var stagedData = new List<IngredientData>(stagedIngredients.Count);
+            foreach (var ingredient in stagedIngredients)
+                stagedData.Add(ingredient.GetData());
+
+            foreach (var rule in combinationRules)
             {
-                if (staged == null) continue;
+                if (!rule.Matches(stagedData)) continue;
 
-                for (int r = 0; r < combinationRules.Length; r++)
-                {
-                    if (!combinationRules[r].CanCombineIngredients(staged.data, newcomer.data)) continue;
+                if (rule.outcomeType == OutcomeType.Success && rule.resultItem != null)
+                    Instantiate(rule.resultItem, itemSpawnTransform);
 
-                    currentRuleIndex = r;
-                    CombineIngredients();
-
-                    // Consume both ingredients of the matched pair.
-                    currentIngredients.Remove(staged);
-                    Destroy(staged.gameObject);
-                    Destroy(newcomer.gameObject);
-                    return;
-                }
+                return Resolve(new OutcomeResult(rule.outcomeType, rule.resultName));
             }
 
-            // No partner on the bench yet — leave it here for a future match.
-            currentIngredients.Add(newcomer);
+            // Processed ingredients but no known rule: a botched experiment.
+            return Resolve(new OutcomeResult(OutcomeType.Fail, "Unknown Mixture"));
         }
 
-        private void OnTriggerExit(Collider other)
+        private static OutcomeResult Resolve(OutcomeResult result)
         {
-            // An ingredient that rolls off the bench should no longer count for a combination.
-            var leaving = other.GetComponent<Ingredient>();
-            if (leaving != null)
-                currentIngredients.Remove(leaving);
-        }
-
-        void CombineIngredients()
-        {
-            Instantiate(combinationRules[currentRuleIndex].resultItem, itemSpawnTransform);
-        }
-
-
-        public void Evaluate(List<IIngredient> stagedIngredients)
-        {
-            throw new NotImplementedException();
+            Debug.Log($"[ChemistrySystem] Resolved: {result}");
+            OnCombinationResolved?.Invoke(result);
+            return result;
         }
     }
 }

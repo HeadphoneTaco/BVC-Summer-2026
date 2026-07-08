@@ -20,18 +20,32 @@ namespace _Project.Code.Core
         public string resultName;
         public Item resultItem;
 
-        public bool CanCombineIngredients(IngredientData ingredientData, IngredientData otherIngredientData)
+        /// <summary>
+        ///     True when the staged ingredients are exactly this rule's ingredients,
+        ///     in any order, duplicates counted. A multiset comparison: Water+Water+Herbs
+        ///     only matches a rule authored with two Waters and one Herbs.
+        /// </summary>
+        public bool Matches(IReadOnlyList<IngredientData> stagedData)
         {
-            // A rule pairs exactly two ingredients. Require the two supplied ingredients to be
-            // that exact pair (order doesn't matter) — not just "each appears somewhere in the rule".
-            // This stops a single ingredient (passed as both) from matching a two-ingredient rule.
-            if (ingredients.Length != 2) return false;
+            if (stagedData == null || stagedData.Count != ingredients.Length) return false;
 
-            var a = ingredients[0];
-            var b = ingredients[1];
+            // Tick off each staged ingredient against an unclaimed slot in the rule.
+            var claimed = new bool[ingredients.Length];
+            foreach (var staged in stagedData)
+            {
+                var found = false;
+                for (var i = 0; i < ingredients.Length; i++)
+                {
+                    if (claimed[i] || ingredients[i] != staged) continue;
+                    claimed[i] = true;
+                    found = true;
+                    break;
+                }
 
-            return (ingredientData == a && otherIngredientData == b) ||
-                   (ingredientData == b && otherIngredientData == a);
+                if (!found) return false;
+            }
+
+            return true;
         }
     }
 }

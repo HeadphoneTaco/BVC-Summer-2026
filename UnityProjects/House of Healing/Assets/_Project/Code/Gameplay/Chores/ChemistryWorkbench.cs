@@ -51,8 +51,8 @@ namespace _Project.Code.Gameplay.Chores
 
             if (chemistrySystem != null)
             {
-                //chemistrySystem.Evaluate(stagedIngredients);
-                stagedIngredients.Clear();
+                chemistrySystem.Evaluate(stagedIngredients);
+                ConsumeStagedIngredients();
             }
             else
             {
@@ -80,6 +80,19 @@ namespace _Project.Code.Gameplay.Chores
 
         public void ClearStaged()
         {
+            stagedIngredients.Clear();
+        }
+
+        /// <summary>
+        ///     A combination consumes its ingredients regardless of outcome —
+        ///     destroy the staged ingredient objects and empty the list.
+        /// </summary>
+        private void ConsumeStagedIngredients()
+        {
+            foreach (var ingredient in stagedIngredients)
+                if (ingredient is Component component && component != null)
+                    Destroy(component.gameObject);
+
             stagedIngredients.Clear();
         }
     }
