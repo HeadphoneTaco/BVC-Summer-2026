@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 100000004}
   - component: {fileID: 100000005}
   - component: {fileID: 100000006}
+  - component: {fileID: 100000007}
   m_Layer: 0
   m_Name: ChemistryGym
   m_TagString: Untagged
@@ -214,6 +215,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92803df445c30c64196172de3cfeb78b, type: 3}
   m_Name:
   m_EditorClassIdentifier:
+--- !u!114 &100000007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4c9e2b6f1d4c3a8e5b9d7c4a3e6f12, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  targetRemedies: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

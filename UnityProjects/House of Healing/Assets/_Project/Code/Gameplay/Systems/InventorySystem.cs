@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text;
 using _Project.Code.Core;
@@ -15,6 +16,12 @@ namespace _Project.Code.Gameplay.Systems
     {
         private readonly List<string> buildingInventory = new();
         private readonly List<IngredientData> ingredientStorage = new();
+
+        /// <summary>
+        ///     Raised whenever the inventory contents change. The display (view) subscribes
+        ///     to this instead of polling — the model never references the UI.
+        /// </summary>
+        public event Action OnInventoryChanged;
         private void OnEnable()
         {
             ChemistrySystem.OnCombinationResolved += HandleCombinationResolved;
@@ -31,6 +38,7 @@ namespace _Project.Code.Gameplay.Systems
             {
                 buildingInventory.Add(result.ResultName);
                 Debug.Log($"[InventorySystem] Added to building inventory: {result.ResultName}");
+                OnInventoryChanged?.Invoke();
             }
         }
 
@@ -38,6 +46,7 @@ namespace _Project.Code.Gameplay.Systems
         {
             ingredientStorage.Add(ingredient);
             Debug.Log($"[InventorySystem] Stored ingredient: {ingredient.ingredientName}");
+            OnInventoryChanged?.Invoke();
         }
 
         /// <summary>Returns a newline-separated list for the rudimentary UI text display.</summary>

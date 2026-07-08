@@ -61,7 +61,39 @@ namespace _Project.Code.Gameplay.Chores
         }
 
         /// <summary>
-        ///     Called when the player places a processed ingredient on the workbench.
+        ///     Physical staging: an ingredient dropped into the bench's trigger zone is staged,
+        ///     raw or processed — chemistry decides what a raw one costs you, not the bench.
+        ///     Combining still only happens on Interact, so the decision stays with the player.
+        /// </summary>
+        private void OnTriggerEnter(Collider other)
+        {
+            var ingredient = FindIngredient(other);
+            if (ingredient == null || stagedIngredients.Contains(ingredient)) return;
+
+            StageIngredient(ingredient);
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            // Picking an ingredient back up (or it rolling off) unstages it.
+            var ingredient = FindIngredient(other);
+            if (ingredient == null) return;
+
+            if (stagedIngredients.Remove(ingredient))
+                Debug.Log($"[ChemistryWorkbench] Unstaged: {ingredient.GetData().ingredientName} " +
+                          $"({stagedIngredients.Count}/3)");
+        }
+
+        private static Ingredient FindIngredient(Collider col)
+        {
+            if (col == null) return null;
+            return col.attachedRigidbody != null
+                ? col.attachedRigidbody.GetComponent<Ingredient>()
+                : col.GetComponent<Ingredient>();
+        }
+
+        /// <summary>
+        ///     Stages an ingredient for the next combination.
         ///     Accepts up to 3 ingredients per combination.
         /// </summary>
         public bool StageIngredient(IIngredient ingredient)
