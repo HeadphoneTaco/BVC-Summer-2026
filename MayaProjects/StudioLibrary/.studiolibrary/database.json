@@ -1,4 +1,13 @@
 {
+    "../../MASH": {
+        "name": "MASH",
+        "path": "../../MASH",
+        "type": "Folder",
+        "folder": "../..",
+        "category": "StudioLibrary",
+        "modified": 1781298918.6883636,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
     "../../Poses": {
         "name": "Poses",
         "path": "../../Poses",
@@ -6,6 +15,15 @@
         "folder": "../..",
         "category": "StudioLibrary",
         "modified": 1780963105.8632517,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Trash/MASH": {
+        "name": "MASH",
+        "path": "../../Trash/MASH",
+        "type": "Folder",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1781298888.093698,
         "__class__": "studiolibrary.folderitem.FolderItem"
     }
 }
