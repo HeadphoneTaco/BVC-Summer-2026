@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "timeUnit": "film",
+    "linearUnit": "cm",
+    "angularUnit": "deg",
+    "description": "",
+    "endFrame": 25,
+    "startFrame": 1,
+    "user": "m.hardwicke596",
+    "ctime": "1783372722",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:FKShoulder_L": {
+      "attrs": {
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE1"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE2"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": 0.0
+        },
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE4"
+        },
+        "Global": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE3"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": 0.0
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE5"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE6"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE7"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 28.500000000000004,
+          "curve": "CURVE8"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 28.000001101427713,
+          "curve": "CURVE9"
+        }
+      }
+    },
+    "cyborg_rig:FKElbow_L": {
+      "attrs": {
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE11"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE12"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE13"
+        },
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE14"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE15"
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE16"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE17"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE18"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE19"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE20"
+        }
+      }
+    },
+    "cyborg_rig:FKWrist_L": {
+      "attrs": {
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE22"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE23"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE24"
+        },
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE25"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE26"
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE27"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE28"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE29"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE30"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 14.0,
+          "curve": "CURVE31"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "timeUnit": "film",
+    "linearUnit": "cm",
+    "angularUnit": "deg",
+    "description": "Starting simple walk cycle w right foot",
+    "endFrame": 25,
+    "startFrame": 1,
+    "user": "m.hardwicke596",
+    "ctime": "1781554611",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/8PosesWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:IKLeg_R": {
+      "attrs": {
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE1"
+        },
+        "swivel": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE2"
+        },
+        "Lenght2": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE5"
+        },
+        "Fatness1": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE7"
+        },
+        "Lenght1": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE11"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE13"
+        },
+        "rock": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE19"
+        },
+        "roll": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE20"
+        },
+        "toe": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE22"
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE3"
+        },
+        "antiPop": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE4"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE6"
+        },
+        "stretchy": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE8"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": -27.851473131902164,
+          "curve": "CURVE9"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": 27.518152513869335,
+          "curve": "CURVE10"
+        },
+        "Fatness2": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE12"
+        },
+        "rollAngle": {
+          "type": "double",
+          "value": 25.0,
+          "curve": "CURVE14"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE15"
+        },
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE16"
+        },
+        "volume": {
+          "type": "double",
+          "value": 10.0,
+          "curve": "CURVE17"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": -0.2717588344641406,
+          "curve": "CURVE18"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE21"
+        }
+      }
+    }
+  }
+}

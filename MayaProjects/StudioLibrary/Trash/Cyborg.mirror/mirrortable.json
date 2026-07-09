@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "left": "*_L",
+    "right": "*_R",
+    "mirrorPlane": [
+      -1,
+      1,
+      1
+    ],
+    "description": "Mirror table for the Feet and Wrists of Cyborg Rig",
+    "user": "m.hardwicke596",
+    "ctime": "1781564303",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": ""
+  }
+,
+  "objects": {
+    "cyborg_rig:IKLeg_R": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:IKArm_R": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:PoleArm_R": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:PoleLeg_R": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:PoleArm_L": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:IKArm_L": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:IKLeg_L": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:PoleLeg_L": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    }
+  }
+}

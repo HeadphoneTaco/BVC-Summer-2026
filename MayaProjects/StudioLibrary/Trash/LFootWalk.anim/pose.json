@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "timeUnit": "film",
+    "linearUnit": "cm",
+    "angularUnit": "deg",
+    "description": "",
+    "endFrame": 25,
+    "startFrame": 1,
+    "user": "m.hardwicke596",
+    "ctime": "1781555225",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/8PosesWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:IKLeg_L": {
+      "attrs": {
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE1"
+        },
+        "swivel": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE2"
+        },
+        "Lenght2": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE5"
+        },
+        "Fatness1": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE7"
+        },
+        "Lenght1": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE11"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE13"
+        },
+        "rock": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE19"
+        },
+        "roll": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE20"
+        },
+        "toe": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE22"
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 5.684341886080802e-14,
+          "curve": "CURVE3"
+        },
+        "antiPop": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE4"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE6"
+        },
+        "stretchy": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE8"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": 17.81979372911821,
+          "curve": "CURVE9"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": -21.995432595134965,
+          "curve": "CURVE10"
+        },
+        "Fatness2": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE12"
+        },
+        "rollAngle": {
+          "type": "double",
+          "value": 25.0,
+          "curve": "CURVE14"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE15"
+        },
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE16"
+        },
+        "volume": {
+          "type": "double",
+          "value": 10.0,
+          "curve": "CURVE17"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": 4.041922080322129,
+          "curve": "CURVE18"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE21"
+        }
+      }
+    }
+  }
+}

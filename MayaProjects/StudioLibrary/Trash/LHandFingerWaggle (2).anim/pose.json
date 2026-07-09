@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "timeUnit": "film",
+    "linearUnit": "cm",
+    "angularUnit": "deg",
+    "description": "",
+    "endFrame": 25,
+    "startFrame": 1,
+    "user": "m.hardwicke596",
+    "ctime": "1783532118",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:Fingers_L": {
+      "attrs": {
+        "indexCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE1"
+        },
+        "middleCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE2"
+        },
+        "cup": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE3"
+        },
+        "thumbCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE4"
+        },
+        "pinkyCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE5"
+        },
+        "spread": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE6"
+        },
+        "ringCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE7"
+        }
+      }
+    }
+  }
+}
