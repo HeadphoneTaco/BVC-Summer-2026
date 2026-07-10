@@ -8,122 +8,212 @@
         "modified": 1781560743.963721,
         "__class__": "studiolibrary.folderitem.FolderItem"
     },
-    "../../Cyborg/BaiscWalkHips.anim": {
+    "../../Cyborg/Animations": {
+        "name": "Animations",
+        "path": "../../Cyborg/Animations",
+        "type": "Folder",
+        "folder": "../../Cyborg",
+        "category": "Cyborg",
+        "modified": 1783694701.2116232,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Cyborg/Animations/BaiscWalkHips.anim": {
         "name": "BaiscWalkHips.anim",
-        "path": "../../Cyborg/BaiscWalkHips.anim",
+        "path": "../../Cyborg/Animations/BaiscWalkHips.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783526390.846394,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644499.9191768,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/Basic L Arm.anim": {
+    "../../Cyborg/Animations/Basic L Arm.anim": {
         "name": "Basic L Arm.anim",
-        "path": "../../Cyborg/Basic L Arm.anim",
+        "path": "../../Cyborg/Animations/Basic L Arm.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783359086.828012,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783694449.1422606,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/BasicWalkChest.anim": {
+    "../../Cyborg/Animations/BasicWalkChest.anim": {
         "name": "BasicWalkChest.anim",
-        "path": "../../Cyborg/BasicWalkChest.anim",
+        "path": "../../Cyborg/Animations/BasicWalkChest.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783526457.1609309,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644500.4067297,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/BasicWalkHead.anim": {
+    "../../Cyborg/Animations/BasicWalkHead.anim": {
         "name": "BasicWalkHead.anim",
-        "path": "../../Cyborg/BasicWalkHead.anim",
+        "path": "../../Cyborg/Animations/BasicWalkHead.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783528030.2171419,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644500.6976051,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/BasicWalkLArm.anim": {
+    "../../Cyborg/Animations/BasicWalkLArm.anim": {
         "name": "BasicWalkLArm.anim",
-        "path": "../../Cyborg/BasicWalkLArm.anim",
+        "path": "../../Cyborg/Animations/BasicWalkLArm.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783526497.4836774,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644500.9385483,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/BasicWalkLLegwPole.anim": {
+    "../../Cyborg/Animations/BasicWalkLLegwPole.anim": {
         "name": "BasicWalkLLegwPole.anim",
-        "path": "../../Cyborg/BasicWalkLLegwPole.anim",
+        "path": "../../Cyborg/Animations/BasicWalkLLegwPole.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783526318.9104786,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644501.4774642,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/BasicWalkRArm.anim": {
+    "../../Cyborg/Animations/BasicWalkRArm.anim": {
         "name": "BasicWalkRArm.anim",
-        "path": "../../Cyborg/BasicWalkRArm.anim",
+        "path": "../../Cyborg/Animations/BasicWalkRArm.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783526531.7486463,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644501.7141845,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/BasicWalkRLegwPole.anim": {
+    "../../Cyborg/Animations/BasicWalkRLegwPole.anim": {
         "name": "BasicWalkRLegwPole.anim",
-        "path": "../../Cyborg/BasicWalkRLegwPole.anim",
+        "path": "../../Cyborg/Animations/BasicWalkRLegwPole.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783526276.2984145,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644501.953008,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/BasicWalkTorso.anim": {
+    "../../Cyborg/Animations/BasicWalkTorso.anim": {
         "name": "BasicWalkTorso.anim",
-        "path": "../../Cyborg/BasicWalkTorso.anim",
+        "path": "../../Cyborg/Animations/BasicWalkTorso.anim",
         "type": ".anim",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1783526422.9800572,
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644502.2082665,
         "__class__": "studiolibrarymaya.animitem.AnimItem"
     },
-    "../../Cyborg/Cyborg A-Pose.pose": {
-        "name": "Cyborg A-Pose.pose",
-        "path": "../../Cyborg/Cyborg A-Pose.pose",
-        "type": ".pose",
+    "../../Cyborg/Animations/RecoveryWalkCycle.anim": {
+        "name": "RecoveryWalkCycle.anim",
+        "path": "../../Cyborg/Animations/RecoveryWalkCycle.anim",
+        "type": ".anim",
+        "folder": "../../Cyborg/Animations",
+        "category": "Animations",
+        "modified": 1783644502.6537347,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../Cyborg/Poses": {
+        "name": "Poses",
+        "path": "../../Cyborg/Poses",
+        "type": "Folder",
         "folder": "../../Cyborg",
         "category": "Cyborg",
-        "modified": 1783357194.9835873,
+        "modified": 1783695751.5543692,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Cyborg/Poses/Cyborg A-Pose.pose": {
+        "name": "Cyborg A-Pose.pose",
+        "path": "../../Cyborg/Poses/Cyborg A-Pose.pose",
+        "type": ".pose",
+        "folder": "../../Cyborg/Poses",
+        "category": "Poses",
+        "modified": 1783644502.2277837,
         "__class__": "studiolibrarymaya.poseitem.PoseItem"
     },
-    "../../Cyborg/Cyborg Arms Mirror Table.mirror": {
-        "name": "Cyborg Arms Mirror Table.mirror",
-        "path": "../../Cyborg/Cyborg Arms Mirror Table.mirror",
-        "type": ".mirror",
+    "../../Cyborg/Selections": {
+        "name": "Selections",
+        "path": "../../Cyborg/Selections",
+        "type": "Folder",
         "folder": "../../Cyborg",
         "category": "Cyborg",
-        "modified": 1783357562.035892,
-        "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
+        "modified": 1783694511.491919,
+        "__class__": "studiolibrary.folderitem.FolderItem"
     },
-    "../../Cyborg/FULL_CharSet.set": {
-        "name": "FULL_CharSet.set",
-        "path": "../../Cyborg/FULL_CharSet.set",
+    "../../Cyborg/Selections/ArmL.set": {
+        "name": "ArmL.set",
+        "path": "../../Cyborg/Selections/ArmL.set",
         "type": ".set",
-        "folder": "../../Cyborg",
-        "category": "Cyborg",
-        "modified": 1781566113.565782,
+        "folder": "../../Cyborg/Selections",
+        "category": "Selections",
+        "modified": 1783694583.6247082,
         "__class__": "studiolibrarymaya.setsitem.SetsItem"
     },
-    "../../Cyborg/RecoveryWalkCycle.anim": {
-        "name": "RecoveryWalkCycle.anim",
-        "path": "../../Cyborg/RecoveryWalkCycle.anim",
-        "type": ".anim",
+    "../../Cyborg/Selections/ArmR.set": {
+        "name": "ArmR.set",
+        "path": "../../Cyborg/Selections/ArmR.set",
+        "type": ".set",
+        "folder": "../../Cyborg/Selections",
+        "category": "Selections",
+        "modified": 1783694851.091658,
+        "__class__": "studiolibrarymaya.setsitem.SetsItem"
+    },
+    "../../Cyborg/Selections/FULL_CharSet.set": {
+        "name": "FULL_CharSet.set",
+        "path": "../../Cyborg/Selections/FULL_CharSet.set",
+        "type": ".set",
+        "folder": "../../Cyborg/Selections",
+        "category": "Selections",
+        "modified": 1783644502.262486,
+        "__class__": "studiolibrarymaya.setsitem.SetsItem"
+    },
+    "../../Cyborg/Selections/FootL.set": {
+        "name": "FootL.set",
+        "path": "../../Cyborg/Selections/FootL.set",
+        "type": ".set",
+        "folder": "../../Cyborg/Selections",
+        "category": "Selections",
+        "modified": 1783695060.6239247,
+        "__class__": "studiolibrarymaya.setsitem.SetsItem"
+    },
+    "../../Cyborg/Selections/FootR.set": {
+        "name": "FootR.set",
+        "path": "../../Cyborg/Selections/FootR.set",
+        "type": ".set",
+        "folder": "../../Cyborg/Selections",
+        "category": "Selections",
+        "modified": 1783695436.3740077,
+        "__class__": "studiolibrarymaya.setsitem.SetsItem"
+    },
+    "../../Cyborg/Selections/Head.set": {
+        "name": "Head.set",
+        "path": "../../Cyborg/Selections/Head.set",
+        "type": ".set",
+        "folder": "../../Cyborg/Selections",
+        "category": "Selections",
+        "modified": 1783695715.5520742,
+        "__class__": "studiolibrarymaya.setsitem.SetsItem"
+    },
+    "../../Cyborg/Selections/RootAndSpine.set": {
+        "name": "RootAndSpine.set",
+        "path": "../../Cyborg/Selections/RootAndSpine.set",
+        "type": ".set",
+        "folder": "../../Cyborg/Selections",
+        "category": "Selections",
+        "modified": 1783695644.4106166,
+        "__class__": "studiolibrarymaya.setsitem.SetsItem"
+    },
+    "../../Cyborg/Tables": {
+        "name": "Tables",
+        "path": "../../Cyborg/Tables",
+        "type": "Folder",
         "folder": "../../Cyborg",
         "category": "Cyborg",
-        "modified": 1783385998.523096,
-        "__class__": "studiolibrarymaya.animitem.AnimItem"
+        "modified": 1783695852.0264862,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Cyborg/Tables/ArmsAndLegs.mirror": {
+        "name": "ArmsAndLegs.mirror",
+        "path": "../../Cyborg/Tables/ArmsAndLegs.mirror",
+        "type": ".mirror",
+        "folder": "../../Cyborg/Tables",
+        "category": "Tables",
+        "modified": 1783696254.818321,
+        "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
     },
     "../../Trash": {
         "name": "Trash",
@@ -134,6 +224,24 @@
         "modified": 1781298911.3190534,
         "__class__": "studiolibrary.folderitem.FolderItem",
         "icon": "trash.svg"
+    },
+    "../../Trash/ArmR.set": {
+        "name": "ArmR.set",
+        "path": "../../Trash/ArmR.set",
+        "type": ".set",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783694668.0685003,
+        "__class__": "studiolibrary.libraryitem.LibraryItem"
+    },
+    "../../Trash/Basic L Arm.anim": {
+        "name": "Basic L Arm.anim",
+        "path": "../../Trash/Basic L Arm.anim",
+        "type": ".anim",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783644500.1630642,
+        "__class__": "studiolibrary.libraryitem.LibraryItem"
     },
     "../../Trash/Basic walk cycle legs.anim": {
         "name": "Basic walk cycle legs.anim",
@@ -160,6 +268,24 @@
         "folder": "../../Trash",
         "category": "Trash",
         "modified": 1781564303.539149,
+        "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
+    },
+    "../../Trash/CyborgArmsMirrorTable.mirror": {
+        "name": "CyborgArmsMirrorTable.mirror",
+        "path": "../../Trash/CyborgArmsMirrorTable.mirror",
+        "type": ".mirror",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783693766.9620402,
+        "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
+    },
+    "../../Trash/CyborgMirrorTable.mirror": {
+        "name": "CyborgMirrorTable.mirror",
+        "path": "../../Trash/CyborgMirrorTable.mirror",
+        "type": ".mirror",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783644502.245304,
         "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
     },
     "../../Trash/LFootWalk.anim": {

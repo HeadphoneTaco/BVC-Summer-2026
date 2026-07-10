@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "timeUnit": "film",
+    "linearUnit": "cm",
+    "angularUnit": "deg",
+    "description": "",
+    "endFrame": 25,
+    "startFrame": 1,
+    "user": "m.hardwicke596",
+    "ctime": "1783694449",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:Fingers_L": {
+      "attrs": {
+        "thumbCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE1"
+        },
+        "pinkyCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE2"
+        },
+        "spread": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE3"
+        },
+        "cup": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE4"
+        },
+        "indexCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE5"
+        },
+        "middleCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE6"
+        },
+        "ringCurl": {
+          "type": "float",
+          "value": 0.0,
+          "curve": "CURVE7"
+        }
+      }
+    },
+    "cyborg_rig:FKWrist_L": {
+      "attrs": {
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE9"
+        },
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE16"
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE11"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE12"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE13"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 14.0,
+          "curve": "CURVE14"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE15"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE10"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE17"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE18"
+        }
+      }
+    },
+    "cyborg_rig:FKElbow_L": {
+      "attrs": {
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE20"
+        },
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE27"
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE22"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE23"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE24"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE25"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE26"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE21"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE28"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE29"
+        }
+      }
+    },
+    "cyborg_rig:FKShoulder_L": {
+      "attrs": {
+        "scaleZ": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE31"
+        },
+        "visibility": {
+          "type": "bool",
+          "value": true,
+          "curve": "CURVE39"
+        },
+        "Global": {
+          "type": "double",
+          "value": 0.0,
+          "curve": "CURVE32"
+        },
+        "translateX": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE34"
+        },
+        "scaleY": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE35"
+        },
+        "rotateY": {
+          "type": "doubleAngle",
+          "value": 28.500000000000004,
+          "curve": "CURVE36"
+        },
+        "rotateZ": {
+          "type": "doubleAngle",
+          "value": 28.000001101427713,
+          "curve": "CURVE37"
+        },
+        "translateZ": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE38"
+        },
+        "rotateX": {
+          "type": "doubleAngle",
+          "value": 0.0,
+          "curve": "CURVE33"
+        },
+        "translateY": {
+          "type": "doubleLinear",
+          "value": 0.0,
+          "curve": "CURVE40"
+        },
+        "scaleX": {
+          "type": "double",
+          "value": 1.0,
+          "curve": "CURVE41"
+        }
+      }
+    }
+  }
+}
