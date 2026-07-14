@@ -182,7 +182,7 @@
         "type": ".set",
         "folder": "../../Cyborg",
         "category": "Cyborg",
-        "modified": 1783702769.1811106,
+        "modified": 1783986225.2611222,
         "__class__": "studiolibrarymaya.setsitem.SetsItem"
     },
     "../../Cyborg/HandL.set": {
@@ -283,7 +283,7 @@
         "type": ".pose",
         "folder": "../../Cyborg/Poses/Body",
         "category": "Body",
-        "modified": 1783717166.2301643,
+        "modified": 1783986262.0483532,
         "__class__": "studiolibrarymaya.poseitem.PoseItem"
     },
     "../../Cyborg/Poses/Body/Torso.pose": {
@@ -633,6 +633,15 @@
         "modified": 1783644502.245304,
         "__class__": "studiolibrarymaya.mirroritem.MirrorItem"
     },
+    "../../Trash/FULL_Char.set": {
+        "name": "FULL_Char.set",
+        "path": "../../Trash/FULL_Char.set",
+        "type": ".set",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783962708.9375222,
+        "__class__": "studiolibrary.libraryitem.LibraryItem"
+    },
     "../../Trash/FULL_CharSet.set": {
         "name": "FULL_CharSet.set",
         "path": "../../Trash/FULL_CharSet.set",
@@ -839,6 +848,24 @@
         "category": "Trash",
         "modified": 1783705993.19417,
         "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Trash/T (2).pose": {
+        "name": "T (2).pose",
+        "path": "../../Trash/T (2).pose",
+        "type": ".pose",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783962709.0893,
+        "__class__": "studiolibrarymaya.poseitem.PoseItem"
+    },
+    "../../Trash/T.pose": {
+        "name": "T.pose",
+        "path": "../../Trash/T.pose",
+        "type": ".pose",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1783986113.6058426,
+        "__class__": "studiolibrarymaya.poseitem.PoseItem"
     },
     "../../Trash/Tables": {
         "name": "Tables",

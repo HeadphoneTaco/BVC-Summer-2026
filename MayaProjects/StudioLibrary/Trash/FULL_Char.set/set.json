@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "description": "",
+    "description": "All thingies for ze robot",
     "user": "m.hardwicke596",
-    "ctime": "1783986225",
+    "ctime": "1783702769",
     "version": "1.0.0",
     "references": [
       {
@@ -13,7 +13,7 @@
       }
     ],
     "mayaVersion": "2025",
-    "mayaSceneFile": ""
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
   }
 ,
   "objects": {
@@ -47,6 +47,7 @@
     "cyborg_rig:FKScapula_L": {},
     "cyborg_rig:FKIndexFinger2_R": {},
     "cyborg_rig:PoleLeg_L": {},
+    "cyborg_rig:Main": {},
     "cyborg_rig:FKMiddleFinger3_R": {},
     "cyborg_rig:BendElbow2_L": {},
     "cyborg_rig:FKIKArm_L": {},
