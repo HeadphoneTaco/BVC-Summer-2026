@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "description": "",
+    "user": "m.hardwicke596",
+    "ctime": "1783702684",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:FKHead_M": {},
+    "cyborg_rig:FKNeck1_M": {},
+    "cyborg_rig:FKNeck_M": {}
+  }
+}

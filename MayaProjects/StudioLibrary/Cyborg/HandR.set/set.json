@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "description": "Thumb, Index, Middle, Ring, Pinkie, Cup",
+    "user": "m.hardwicke596",
+    "ctime": "1783701340",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:FKMiddleFinger2_R": {},
+    "cyborg_rig:FKRingFinger3_R": {},
+    "cyborg_rig:FKMiddleFinger1_R": {},
+    "cyborg_rig:FKThumbFinger3_R": {},
+    "cyborg_rig:FKPinkyFinger1_R": {},
+    "cyborg_rig:FKIndexFinger2_R": {},
+    "cyborg_rig:FKMiddleFinger3_R": {},
+    "cyborg_rig:FKRingFinger2_R": {},
+    "cyborg_rig:FKPinkyFinger2_R": {},
+    "cyborg_rig:FKPinkyFinger3_R": {},
+    "cyborg_rig:FKRingFinger1_R": {},
+    "cyborg_rig:FKIndexFinger1_R": {},
+    "cyborg_rig:FKCup_R": {},
+    "cyborg_rig:FKThumbFinger1_R": {},
+    "cyborg_rig:FKThumbFinger2_R": {},
+    "cyborg_rig:FKIndexFinger3_R": {}
+  }
+}
