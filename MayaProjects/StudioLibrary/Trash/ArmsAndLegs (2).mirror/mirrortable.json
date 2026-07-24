@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "left": "*_L",
+    "right": "*_R",
+    "mirrorPlane": [
+      -1,
+      1,
+      1
+    ],
+    "description": "Fingers, Wrists, Elbows, Shoulders, Feet, Knee Poles",
+    "user": "m.hardwicke596",
+    "ctime": "1783696902",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:FKMiddleFinger3_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKMiddleFinger1_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKWrist_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKIndexFinger1_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKThumbFinger3_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:Fingers_L": {
+      "mirrorAxis": [
+        1,
+        -1,
+        1
+      ]
+    },
+    "cyborg_rig:FKPinkyFinger1_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKThumbFinger1_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKIndexFinger2_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKCup_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKRingFinger1_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKPinkyFinger3_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKThumbFinger2_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKPinkyFinger2_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKMiddleFinger2_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKRingFinger3_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKRingFinger2_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKIndexFinger3_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKMiddleFinger2_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKRingFinger3_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKWrist_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKMiddleFinger1_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKThumbFinger3_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKPinkyFinger1_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKIndexFinger2_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKMiddleFinger3_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKRingFinger2_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKPinkyFinger2_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKPinkyFinger3_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKRingFinger1_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKIndexFinger1_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKCup_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKThumbFinger1_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:Fingers_R": {
+      "mirrorAxis": [
+        1,
+        -1,
+        1
+      ]
+    },
+    "cyborg_rig:FKThumbFinger2_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKIndexFinger3_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKElbow_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKShoulder_R": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKShoulder_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:FKElbow_L": {
+      "mirrorAxis": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "cyborg_rig:IKLeg_R": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:IKLeg_L": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:PoleLeg_R": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "cyborg_rig:PoleLeg_L": {
+      "mirrorAxis": [
+        -1,
+        1,
+        1
+      ]
+    }
+  }
+}

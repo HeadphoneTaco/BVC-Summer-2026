@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "description": "Root, Hips, Back, Chest.",
+    "user": "m.hardwicke596",
+    "ctime": "1783695644",
+    "version": "1.0.0",
+    "references": [
+      {
+        "filename": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "unresolved": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/assets/cyborg_rig.ma",
+        "namespace": "cyborg_rig",
+        "node": "cyborg_rigRN"
+      }
+    ],
+    "mayaVersion": "2025",
+    "mayaSceneFile": "C:/Github/BVCSummer2026/MayaProjects/Module2_WalkCycles/scenes/FKWalkCycle.mb"
+  }
+,
+  "objects": {
+    "cyborg_rig:HipSwinger_M": {},
+    "cyborg_rig:FKRoot_M": {},
+    "cyborg_rig:FKSpine1_M": {},
+    "cyborg_rig:FKChest_M": {}
+  }
+}
