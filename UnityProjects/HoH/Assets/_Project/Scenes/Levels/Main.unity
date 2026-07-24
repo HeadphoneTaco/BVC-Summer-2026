@@ -77315,6 +77315,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8776603641472502825, guid: cef7ec148b909db4a978bc1dee08c973, type: 3}
   m_PrefabInstance: {fileID: 1557238859}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1559377176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559377178}
+  - component: {fileID: 1559377177}
+  m_Layer: 0
+  m_Name: Adaptive Probe Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1559377177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559377176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cded085d155cde949b60f67a11dbc3bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.ProbeVolume
+  version: 2
+  globalVolume: 0
+  mode: 2
+  size: {x: 10, y: 10, z: 10}
+  overrideRendererFilters: 0
+  minRendererVolumeSize: 0.1
+  objectLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  lowestSubdivLevelOverride: 0
+  highestSubdivLevelOverride: 7
+  overridesSubdivLevels: 0
+  mightNeedRebaking: 0
+  cachedTransform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: -0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: -0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: -0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  cachedHashCode: 2065368712
+  fillEmptySpaces: 0
+--- !u!4 &1559377178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559377176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1559798737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83474,6 +83550,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8776603641472502825, guid: cef7ec148b909db4a978bc1dee08c973, type: 3}
   m_PrefabInstance: {fileID: 1681496093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1683656389
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1683656391}
+  - component: {fileID: 1683656390}
+  m_Layer: 0
+  m_Name: ProbeVolumePerSceneData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1683656390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683656389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83d2f7ae04ab6f4f99b0d85377be998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.ProbeVolumePerSceneData
+  serializedBakingSet: {fileID: 11400000, guid: 9d403c9129becbd4488bad0a98f65847, type: 2}
+  sceneGUID: 3905be3e5df75cf42add50ccb12e52c7
+  obsoleteAsset: {fileID: 0}
+  obsoleteCellSharedDataAsset: {fileID: 0}
+  obsoleteCellSupportDataAsset: {fileID: 0}
+  obsoleteSerializedScenarios: []
+--- !u!4 &1683656391
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683656389}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1684678508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106896,3 +107022,5 @@ SceneRoots:
   - {fileID: 572911293}
   - {fileID: 215744103}
   - {fileID: 644437459}
+  - {fileID: 1559377178}
+  - {fileID: 1683656391}
