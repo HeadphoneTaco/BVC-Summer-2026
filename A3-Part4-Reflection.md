@@ -1,6 +1,6 @@
 # A3 Part 4: Individual Reflection
 
-**Prototype:** Count Down Under · **Cycle:** July 28 to August 17, 2026 · **Group of four**
+**Prototype:** Count Down Under · **Cycle:** July 28 to August 21, 2026 · **Group of four**
 
 ## How my practice held across the longer cycle
 
@@ -10,19 +10,19 @@ jam version. That took an afternoon, and by the end of July 28 the group had som
 work. I have done that opening enough times that it is close to automatic, which is itself the
 argument for making it a template instead of retyping it every project.
 
-The part that did not hold was pacing. I committed on eleven of the twenty one days in the
-cycle, and four of those days carry 56 of my 89 commits. Roughly two thirds of my work landed
-on four days.
+The part that did not hold was pacing. I committed on thirteen of the twenty five days in the
+cycle, and four of those days carry 56 of my 102 commits. Over half of my work landed on four
+days.
 
 That is the shape of how I work. I am slow to start and productive once I get going, so what
 drove my schedule was whenever momentum happened to arrive. The sprint boundaries did not. On a
 four day jam this is invisible, because the whole project fits inside one or two of those
-productive stretches. Across three weeks it becomes the defining feature of the cycle.
+productive stretches. Across four weeks it becomes the defining feature of the cycle.
 
 The other half of pacing is rest, and I was bad at it in both directions. Some days I had to
 talk myself out of working, because the laundry had been ignored for a week and the room needed
 sweeping and none of that stops being true because a build is due. Giving myself permission to
-not work is a skill I do not have yet, and on a three week cycle it matters more than it does
+not work is a skill I do not have yet, and on a month-long cycle it matters more than it does
 on a jam, because there is no finish line close enough to sprint to.
 
 ## What worked
@@ -39,7 +39,7 @@ directional change" becomes a Cinemachine camera with lookahead on the 13th and 
 deadzone after that, the notes on chromatic aberration, colour correction and 2D spot lights
 become the lighting and post-processing work on the 15th and 16th, and "reveal that the tunnels
 are where you can go" becomes a level design update on the 16th and the dawn fade on the 17th.
-One session, and the last week of a three week project ran on it.
+One session, and the following week of the project ran on it.
 
 ## What broke in coordination
 
@@ -68,50 +68,56 @@ before discussing it is not.
 
 **I was the only person who made a build.** Every build in this cycle and every project before
 it was mine. That is not reluctance to share, I like troubleshooting and I am happy to be the
-one fixing the compile error at eleven at night, but it means three people finished a three
-week cycle without ever making a Windows build, switching a target to WebGL, or pushing to
-itch. Next term is a single project across a whole semester with a larger group, and I want all
+one fixing the compile error at eleven at night, but it means three people finished a four week
+cycle without ever making a Windows build, switching a target to WebGL, or pushing to itch. It
+shows in the final stretch: from 18 August onward every commit on the project is mine, while
+the other three were finding players and sending back notes. That split worked, and it also
+means the implementation had exactly one point of failure for the last four days. Next term is a single project across a whole semester with a larger group, and I want all
 of us to have made one, including the version that fails, because "I used the same settings and
 it broke" is where the learning is.
 
-**We observed once inside the cycle, on day ten of twenty one.** Each sprint was supposed to put
-its build in front of players. We managed the middle sprint and never again while there was
-still a sprint left to spend the findings in. Neither observer that day was outside our circle
-either: one was a former instructor, the other a teammate's brother.
+**Almost all of our player observation happened in the last four days.** The cycle was supposed
+to put each sprint's build in front of players. We managed 10 August, and then nothing for a
+week. From 18 August to 21 August it arrived all at once: two people I sat with directly, one
+from Foundations and one from administration with no connection to the class, plus several more
+that teammates recruited and reported back on in our Discord.
 
-Part of that is that getting people to play is hard, and people are reluctant to hand back
-negative feedback. Part of it is mine. I find it uncomfortable to watch someone critique work I
-made, because I hear it as a judgement on the effort rather than on the result. That is my
-problem to solve and not a reason to test less. I had roommates I never asked.
+What that sequence shows is the part I got wrong. For three weeks I treated getting playtesters
+as the hard problem. Then four people did it inside four days, largely by asking someone. The
+obstacle was never availability. It was that nobody, me included, made it anyone's job until
+the end.
 
-**The outside players arrived on submission day.** On 18 August I sat down two people with no
-connection to the class, one from Foundations and one from administration, and watched them
-play. They were the first players in the entire cycle who were not a teammate, a teammate's
-relative, or an instructor, and they produced more usable information in one sitting than I
-expected: the first instinct to attack with the mouse, X and Z being mixed up constantly, no
-controls on the main menu, traversal confusion, not wanting to enter bat form every time, and
-the humour living in the game's description rather than in the game. One died and immediately
-started again, which is the best signal in any of the notes.
+My own reason for not asking sooner is not a scheduling one. I find it uncomfortable to watch
+someone critique work I made, because I hear it as a judgement on the effort rather than on the
+result. That is mine to solve and not a reason to test less. I had roommates I never asked.
 
-None of it could be acted on. The session that most resembled a real test was the one I ran on
-the day the work stopped.
+The cost is visible in what we could use. The last round produced the sharpest notes in the
+whole project: the sunrise timer left so little pressure that a player could stand still, the
+kangaroo's attack stayed active too long, the ground check was too generous, the dash was slower
+than the run it was meant to beat, bat form recharged fast enough to fly indefinitely, and the
+level was not forcing the player into choices. We shipped what days allowed, cutting the timer
+from 180 seconds to 90, turning off the placeholder objective list, tightening the player
+hitbox and reworking the attack and idle strategies. The rest is a list of things we now know
+and did not build.
 
 **I assumed someone else would fix it.** By the back half of the cycle everyone was tired,
 this being the last of a long run of small projects, and I caught myself deciding that a
 problem sat closer to somebody else's area so they would probably handle it. Sometimes nobody
-did. The clearest cost is the sightseeing objective: a counter went into the build on August 6,
-the player on August 10 still did not understand the objective, an unrelated player on August
-18 did not understand it either, and it is still not properly implemented. Three independent
-observations of the same failure, eight days apart, on a to-do that everyone could see and
-nobody owned.
+did. The clearest cost is the sightseeing objective. A counter went into the build on August 6.
+The player on August 10 did not understand the objective. An unrelated player on August 18 did
+not understand it either. A teammate flagged that the UI was still showing the old version of
+it, and on August 21 another teammate was still seeing the untextured placeholder squares
+marking the sightseeing spots. Four separate observations of one failure across fifteen days,
+on a to-do that everyone could see and nobody owned.
 
 That failure is not evenly distributed, either. The person on this team producing the most
 work by volume was doing art at a rate the rest of us were not matching, and I under-communicated
 with her repeatedly. Effort was not what I owed her. Replies were.
 
 **The records never left paper.** All three sets of playtest notes are handwritten and none of
-them are in the repository. We talked through the 10 August results in person, all four of us,
-and wrote none of it down. No commit message references a playtest, so the link between an observation and the change
+them are in the repository. The team review that followed lived in Discord, which is better
+than nothing and still not next to the code. We talked through the 10 August results in person,
+all four of us, and wrote none of it down. No commit message references a playtest, so the link between an observation and the change
 it caused exists only in memory. Reconstructing that mapping afterwards from commit dates and
 wording took an hour and parts of it are still guesses.
 
